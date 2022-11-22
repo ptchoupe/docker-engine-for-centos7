@@ -1,0 +1,21 @@
+#!/bim/bash
+#Author: Pierre
+#Date: Nov 2022
+
+echo "starting Docker installation on alpine linux this may takes a few min..."
+ sudo yum remove docker \
+   docker-common\
+     docker-selinux \
+       docker-engine
+       sudo yum install -y yum-utils \
+       device-mapper-persistent-data \
+       sudo yum-config-manager \
+        --add-repo \
+	 sudo yum install docker-ce
+	 yum install http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/p/pigz-2.3.4-1.el7.x86_64.rpm
+	 yum install http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.21-1.el7.noarch.rpm
+	 yum list docker-ce --showduplicates | sort -ir
+
+	 echo "docker is ready please run service doker start and get the ippaddres and type it on your browser"
+
+	 
